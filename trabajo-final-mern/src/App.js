@@ -1,23 +1,17 @@
-import _default from "react-bootstrap/esm/Accordion";
-import FoodCard from "./FoodCard";
-import Navbar from "./Navbar";
 import React from 'react'
-import { Container } from "@chakra-ui/react";
-
-
-
+import Grid from './components/Grid';
+import NavBar from "./components/Navbar";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export function App() {
   return (
-    <>
-    <Container>
-    <Navbar/>
-    </Container>
-    <Container>
-      <FoodCard/>
-    </Container>
-    </>
+    <React.StrictMode>
+        <ChakraProvider>
+          <NavBar />
+          <Grid />
+        </ChakraProvider>
+    </React.StrictMode>
   );
 }
 export default App;
-console.log("Helo world from Backend");
+
