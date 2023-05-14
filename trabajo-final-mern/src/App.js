@@ -1,18 +1,12 @@
-import React from 'react'
-import Grid from './components/Grid';
-import NavBar from "./components/Navbar";
-import { ChakraProvider } from "@chakra-ui/react";
+import { AppRouter } from "./router/AppRouter";
 
-
-export function App() {
+function App(){
   return (
-    <React.StrictMode>
-        <ChakraProvider>
-          <NavBar />
-          <Grid />
-        </ChakraProvider>
-    </React.StrictMode>
+    <div>
+      <AppRouter/>
+    </div>
   );
 }
-export default App;
+
+export default App
 

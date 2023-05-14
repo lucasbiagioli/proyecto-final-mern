@@ -4,7 +4,7 @@ require('dotenv').config();
 const productRoutes = require('./routes/products.routes')
 const PORT = process.env.PORT || 8080
 const cors = require('cors');
-const initDBConnection  = require('./database/dbConnection');
+const initDBConnection  = require('./src/database/dbConnection');
 
 
 //crear el servidor de express
