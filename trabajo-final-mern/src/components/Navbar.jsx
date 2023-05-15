@@ -1,7 +1,7 @@
 import { Box, Stack, Switch, Button, Flex, HStack, Heading, Spacer, Text } from "@chakra-ui/react";
 import { MdDarkMode } from "react-icons/md";
 
-export default function NavBar() {
+export function Navbar() {
     return (
         <Flex as="nav" p="10px" alignItems="center">
             <Heading as="h1">Rolling Code</Heading>
