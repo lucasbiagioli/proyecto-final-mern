@@ -1,5 +1,7 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { Image, Box } from '@chakra-ui/react'
+import RollingCode from '../Images/RollingCode.png'
 
 export default function Footer() {
   return (
@@ -39,9 +41,13 @@ export default function Footer() {
                 <MDBIcon color='secondary' icon='gem' className='me-3' />
                 Rolling Code
               </h6>
-              <p>
-                <img src='D:\Proyectos VSCODE\React\proyecto-final-mern\trabajo-final-mern\src\Images\RollingCode.png' alt='Rolling-Code-image'></img>
-              </p>
+              <Box  boxSize='sm'>
+              <Image
+                boxSize='250px'
+                src={RollingCode}
+                alt='Dan Abramov'
+              />
+              </Box>
             </MDBCol>
 
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>

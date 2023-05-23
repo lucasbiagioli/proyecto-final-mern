@@ -1,10 +1,10 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar'
+import { NavbarChakra } from '../components/NavbarChakra'
 
 export const Home = () => {
   return (
     <div>
-      <Navbar/>
+      <NavbarChakra/>
     </div>
   )
 }
