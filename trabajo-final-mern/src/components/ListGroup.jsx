@@ -1,9 +1,11 @@
 import React from 'react';
 import { MDBListGroup, MDBListGroupItem } from 'mdb-react-ui-kit';
+import { Heading } from '@chakra-ui/react';
 
 export function ListGroup() {
   return (
-    <div style={{ minWidth: '22rem' }}>
+    <div style={{ minWidth: '22rem', padding: '33px', borderRadius: '15px' }}>
+      <Heading p={2} textColor={'white'}>Administrador de Usuarios</Heading>
       <h6 className='bg-light p-2 border-top border-bottom'>Admin List</h6>
       <MDBListGroup light className='mb-4'>
         <MDBListGroupItem className='d-flex justify-content-between align-items-center'>

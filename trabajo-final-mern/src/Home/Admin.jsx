@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar'
+import  NavbarHome  from '../components/NavbarHome'
 import { Container } from 'react-bootstrap'
 import { ListGroup } from '../components/ListGroup'
 import Footer from '../components/Footer'
@@ -11,13 +11,15 @@ import { Divider } from '@chakra-ui/react'
 export const Admin = () => {
   return (
     <div>
-    <Navbar/>
+    <NavbarHome/>
+    <Divider/>
+    <div style={{ backgroundColor: "#00bcd4" }}>
     <Container>
       <ListGroup/>
     </Container>
     <Container>
-    <Divider/>
     </Container>
+    </div>
     <FoodGridAdmin/>
     <Footer/>
     </div>

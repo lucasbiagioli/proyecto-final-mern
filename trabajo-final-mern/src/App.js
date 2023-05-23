@@ -3,10 +3,10 @@ import { AppRouter } from "./router/AppRouter";
 
 function App(){
   return (
-    <div>
-      <ChakraProvider>
-      <AppRouter/>
-      </ChakraProvider>
+        <div>
+              <ChakraProvider>
+              <AppRouter/>
+              </ChakraProvider>    
     </div>
   );
 }

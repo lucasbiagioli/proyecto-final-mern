@@ -1,9 +1,11 @@
 import React from 'react';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
-import { Button } from '@chakra-ui/react';
+import { Button, Heading } from '@chakra-ui/react';
 
 export default function FoodGridAdmin() {
   return (
+    <div style={{ backgroundColor: "#5E5E5E" }}>
+     <Heading p={2} textColor={'white'}>Administrador de Menu</Heading>
     <MDBRow className='row-cols-1 row-cols-md-6 g-4 p-5'>
       <MDBCol>
         <MDBCard>
@@ -108,5 +110,6 @@ export default function FoodGridAdmin() {
         </MDBCard>
       </MDBCol>
     </MDBRow>
+    </div>
   );
 }

@@ -3,7 +3,7 @@ import { HStack, Stack } from '@chakra-ui/react'
 import { Input } from '@chakra-ui/react'
 import {FaFacebook, FaTwitter, FaGoogle, FaGithub, FaTelegram} from 'react-icons/fa'
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container } from '@chakra-ui/react'
 
 
     
@@ -11,15 +11,15 @@ function RegisterForm (){
         const [show, setShow] = React.useState(false)
         const handleClick = () => setShow(!show)
      return (
-        <Container justifyContent={'center'}>
-        <FormControl isRequired maxW={'lg'} minW={'md'} border={'solid black 1px'} p={2} borderRadius={10}>
+        <Container>
+        <FormControl shadow={'30px'} bg={'grey'} isRequired maxW={'lg'} minW={'md'} border={'solid black 5px'} p={2} borderRadius={10}>
             <h1>Registro</h1>
             <FormLabel>Nombres</FormLabel>
-            <Input as={''} placeholder='First name' />
+            <Input as={''} placeholder='Nombres' />
             <FormLabel>Apellidos</FormLabel>
-            <Input placeholder='Last name' required='true' />
+            <Input placeholder='Apellidos' required='true' />
             <FormLabel>Pais</FormLabel>
-                <Select placeholder='Select country'>
+                <Select placeholder='Seleccione un País'>
                     <option>Argentina</option>
                     <option>Brasil</option>
                     <option>Chile</option>
