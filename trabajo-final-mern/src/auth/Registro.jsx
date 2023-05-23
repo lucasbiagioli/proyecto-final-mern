@@ -10,8 +10,8 @@ export const Registro = () => {
     <div>
     <Navbar/>
     <Divider></Divider>
-    <Container>
-    <RegisterForm/>
+    <Container as={'div'}>
+    <RegisterForm></RegisterForm>
     </Container>
     <Divider></Divider>
     <Footer/>

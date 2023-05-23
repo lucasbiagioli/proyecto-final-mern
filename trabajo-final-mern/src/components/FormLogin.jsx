@@ -1,8 +1,8 @@
-import Button from 'react-bootstrap/Button';
+import React from 'react';
+import { Button } from '@chakra-ui/react';
+import { InputGroup } from '@chakra-ui/react';
 import {FormControl, FormLabel, FormHelperText,} from '@chakra-ui/react'
 import { Input, InputRightElement } from '@chakra-ui/react';
-import { InputGroup } from '@chakra-ui/react';
-import React from 'react';
 import { Container } from '@chakra-ui/react';
 import { Checkbox } from '@chakra-ui/react'
 import { Divider } from '@chakra-ui/react'
@@ -11,12 +11,12 @@ function FormLogin() {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
   return (
-    <Container bg={'purple'} p={5} borderRadius={'15px'}>  
+    <Container bg={'teal'} p={5} borderRadius={'15px'}>  
     <FormControl maxW={'lg'} minW={'md'}>
         <h1 className='text-white'>Login</h1>
-    <FormLabel className='text-white'>Email address</FormLabel>
+    <FormLabel className='text-white'>Direccion de Correo</FormLabel>
     <Input type='email' />
-    <FormHelperText className='text-white'>We'll never share your password.</FormHelperText>
+    <FormHelperText className='text-white'>Contraseña</FormHelperText>
     <InputGroup size='md'>
       <Input
         pr='4.5rem'
@@ -31,7 +31,7 @@ function FormLogin() {
     </InputGroup>
     <Container p={'10px'} centerContent maxW={'600px'}>
     <Checkbox mt={'10px'} className='text-white' colorScheme='green' defaultChecked>Recúerdame</Checkbox>
-    <Button variant="outline-primary">Login</Button>{' '}
+    <Button mt={2} colorScheme='green'>Ingresa</Button>
     </Container>
     <Divider orientation='horizontal'/>
     </FormControl>

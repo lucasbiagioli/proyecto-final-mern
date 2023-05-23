@@ -33,24 +33,25 @@ export default function Footer() {
         </div>
       </section>
 
-      <section className=''>
-        <MDBContainer className='text-center text-md-start mt-5'>
-          <MDBRow className='mt-3'>
-            <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
+      <section className='text-center'>
+        <MDBContainer  className='text-center text-md-start mt-5'>
+          <MDBRow className='mt-3 '>
+            <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4 text-center'>
+              <h6 className='text-uppercase fw-bold mb-4 '>
                 <MDBIcon color='secondary' icon='gem' className='me-3' />
                 Rolling Code
               </h6>
-              <Box  boxSize='sm'>
+              <Box  justifyContent={'center'} className='text-center' boxSize='sm'>
               <Image
+                justifyContent={''}
                 boxSize='250px'
                 src={RollingCode}
-                alt='Dan Abramov'
+                alt='Rolling Code'
               />
               </Box>
             </MDBCol>
 
-            <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
+            <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4 text-center'>
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
                 <a href='#!' className='text-reset'>
@@ -74,7 +75,7 @@ export default function Footer() {
               </p>
             </MDBCol>
 
-            <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
+            <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4 text-center'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
                 <a href='#!' className='text-reset'>
@@ -98,7 +99,7 @@ export default function Footer() {
               </p>
             </MDBCol>
 
-            <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
+            <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4 text-center'>
               <h6 className='text-uppercase fw-bold mb-4'>Contacto</h6>
               <p>
                 <MDBIcon color='secondary' icon='home' className='me-2' />

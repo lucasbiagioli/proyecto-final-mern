@@ -11,12 +11,14 @@ function RegisterForm (){
         const [show, setShow] = React.useState(false)
         const handleClick = () => setShow(!show)
      return (
-        <FormControl isRequired maxWidth={'400px'} border={'solid black 1px'} p={2} borderRadius={10}>
-            <FormLabel>First name</FormLabel>
+        <Container justifyContent={'center'}>
+        <FormControl isRequired maxW={'lg'} minW={'md'} border={'solid black 1px'} p={2} borderRadius={10}>
+            <h1>Registro</h1>
+            <FormLabel>Nombres</FormLabel>
             <Input as={''} placeholder='First name' />
-            <FormLabel>Last Name</FormLabel>
+            <FormLabel>Apellidos</FormLabel>
             <Input placeholder='Last name' required='true' />
-            <FormLabel>Country</FormLabel>
+            <FormLabel>Pais</FormLabel>
                 <Select placeholder='Select country'>
                     <option>Argentina</option>
                     <option>Brasil</option>
@@ -81,6 +83,7 @@ function RegisterForm (){
             </HStack>
             </Container>
         </FormControl>
+        </Container>
   );
 }
 
